@@ -68,6 +68,7 @@ h2.user{
 .product-right{
   flex-grow: .75;
   margin-left: auto;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
