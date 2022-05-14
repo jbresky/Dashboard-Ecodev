@@ -25,7 +25,7 @@ class Total extends Component{
 
     render(){
         return(
-            <div className='carrusel'>
+            <div className='totals-container'>
                  {
                      this.state.listTotal.map((total, index) => {
                          return (

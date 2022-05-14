@@ -1,56 +1,98 @@
-
-
-.Dash-container{
-  width: 90%;
-  height: 500px;
-  border: 2px solid violet;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.Users{
-  width: 300px;
-  height: 300px;
-}
-
-
-
-
-
-.App {
+.totals-container{
+  display: flex;
+  width: 70%;
+  height: 200px;
+  justify-content: space-around;
   text-align: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ececec99;
+  box-shadow: rgb(0 0 0 / 25%) 0 1px 2px
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2{
+  font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.middle{
+  display: flex;
+  margin: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.totals-container h1, .container h1, .products-container h1{
+  color: #40972d;
+}
+
+.container h1{
+  margin: 2rem 4rem;
+}
+
+h2.user{
+  margin: 2rem 0;
+}
+.logo{
+  width: 100%;
+  background-color: #fafafa;
+}
+.totals-container h2, .container h2, .products-container{
+  font-weight: normal;
+}
+
+.container{
+  /* width: 600px; */
+  justify-content: space-around;
+  text-align: left;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ececec99;
+  box-shadow: rgb(0 0 0 / 25%) 0 1px 2px
+}
+
+.products-container{
+  width: 70%;
+  justify-content: space-around;
+  text-align: left;
+  align-items: center;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ececec99;
+  box-shadow: rgb(0 0 0 / 25%) 0 1px 2px
+}
+
+.card-product{
+  display: flex;
+  margin: 2rem;
+}
+
+.card-product img{
+  width: 200px;
+  border-radius: 3px;
+}
+
+.product-right{
+  flex-grow: .75;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+  margin: 2rem 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

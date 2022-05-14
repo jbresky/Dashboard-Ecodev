@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Board from './Board';
+import CardsUser from './CardsUser';
 
 class Users extends Component{
     constructor(props){
@@ -25,10 +25,11 @@ class Users extends Component{
 
     render(){
         return(
-            <div>
-                {this.state.usersList.map((user, i) => {
+            <div className='container'>
+                 <h1>Último usuario creado</h1>
+                {this.state.usersList.map((user, index) => {
                     return(
-                    <Board key={i} user={user} />
+                    <CardsUser key={index} user={user}/>
                     )
                 })}
             </div>
